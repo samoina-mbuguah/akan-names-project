@@ -1,0 +1,9 @@
+.intro {
+  margin: 20px;
+  border: solid purple;
+  background-color: purple;
+  padding: 6px;
+  text-align: center;
+  font-weight: 700;
+  color: yellow;
+}
