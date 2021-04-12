@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>Week 2 Independent Project</head>
-<link href="CSS/styles.css" rel="stylesheet" type="CSS/text">
+
+<head>
+  <title>Week 2 IP</title>
+  <link href="CSS/bootstrap.min.css" rel="stylesheet" type="CSS/text">
+  <link href="CSS/styles.css" rel="stylesheet" type="CSS/text">
+</head>
+
 <body>
   <div class="container">
     <h1>Find out what your Akan name is! :)</h1>
-    <p>Akan names are derived from the Ghanaian culture. That's ecause the Akan people often name their children after the day of the week they were born. Depending on the gender, male and female names are different. Below are the names for both genders.</p>
+    <p>Akan names are derived from the Ghanaian culture. That's ecause the Akan people often name their children after
+      the day of the week they were born. Depending on the gender, male and female names are different. Below are the
+      names for both genders. Click <a href="https://www.britannica.com/topic/Akan">this</a> link to read more about the
+      Akan people of Ghana.</p>
     <br>
     <div class="row">
       <div class="col-md-6">
@@ -40,13 +48,27 @@
       <input type="radio" id="male" name="gender" value="male">
       <label for "Male">Male</label>
       <br><br>
-      <input type="text" placeholder="Enter your year of birth">
-      <input type="text" placeholder="Enter your month of birth">
-      <input type="text" placeholder="Enter your date of birth">
+
+      <label for "year">What year were you born? (write in 4 digits): </label>
+      <input type="text" id="year" name="year">
+      <br><br>
+
+      <label for "month">What month were you born? (use a number eg 1 for January): </label>
+      <input type="text" id="month" name="month" min="1" max="12">
+      <br><br>
+
+      <label for "date">Enter your date of birth: </label>
+      <input type="text" id="date" name="date" min="1" max="31">
+      <br><br>
+
       <button type="submit">Submit</button>
     </form>
 
+  <h2>Wondering what your Akan name is?</h2>
+  <p id="displayAkanNameHere"></p>
   </div>
+
+  <script src="/JS/scripts.js"></script>
 </body>
 
 </html>
