@@ -2,22 +2,31 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Week 2 IP</title>
-  <link href="CSS/bootstrap.min.css" rel="stylesheet" type="CSS/text">
-  <link href="CSS/styles.css" rel="stylesheet" type="CSS/text">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="CSS/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <div class="container">
-    <h1>Find out what your Akan name is! :)</h1>
-    <p>Akan names are derived from the Ghanaian culture. That's ecause the Akan people often name their children after
+    <div class="intro">
+      <h1>AKAN NAMES</h1>
+      <h2>Find out what your Akan name is!</h2>
+    </div>
+
+    <p>Akan names are derived from the Ghanaian culture. That's because the Akan people often name their children after
       the day of the week they were born. Depending on the gender, male and female names are different. Below are the
       names for both genders. Click <a href="https://www.britannica.com/topic/Akan">this</a> link to read more about the
       Akan people of Ghana.</p>
+    <img src="images/akan-culture.jpg" class="img-fluid" alt="Picture contains people of the Akan tribe">
+    <br>
     <br>
     <div class="row">
-      <div class="col-md-6">
-        <h2>Female Akan Names</h2>
+      <div class="col-md-6"> 
+        <h3>Female Akan Names</h3>
         <ul>
           <li>Sunday: Akosua</li>
           <li>Monday: Adwoa</li>
@@ -29,7 +38,7 @@
         </ul>
       </div>
       <div class="col-md-6">
-        <h2>Male Akan Names</h2>
+        <h3>Male Akan Names</h3>
         <ul>
           <li>Sunday: Kwasi</li>
           <li>Monday: Kwadwo</li>
@@ -41,33 +50,33 @@
         </ul>
       </div>
     </div>
-    <form action="#href">
-      <p> Please select your gender:</p>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for "Female">Female</label>
-      <input type="radio" id="male" name="gender" value="male">
-      <label for "Male">Male</label>
-      <br><br>
-
-      <label for "year">What year were you born? (write in 4 digits): </label>
-      <input type="text" id="year" name="year" required>
-      <br><br>
-
-      <label for "month">What month were you born? (use a number between 1 and 12): </label>
-      <input type="text" id="month" name="month" required min="1" max="12">
-      <br><br>
-
-      <label for "date">Enter your date of birth (date between 1 and 31): </label>
-      <input type="text" id="date" name="date" required min="1" max="31">
-      <br><br>
-
-      <button type="submit">Submit</button>
-    </form>
-
-  <h2>Wondering what your Akan name is?</h2>
-  <p id="displayAkanNameHere"></p>
+    <div class="col-md-6">
+      <form action="#href">
+        <p> Please select your gender:</p>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for "Female">Female</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for "Male">Male</label>
+        <br><br>
+  
+        <label for "year">What year were you born? (write in 4 digits): </label>
+        <input type="text" id="year" name="year" required>
+        <br><br>
+  
+        <label for "month">What month were you born? (use a number between 1 and 12): </label>
+        <input type="text" id="month" name="month" required min="1" max="12">
+        <br><br>
+  
+        <label for "date">Enter your date of birth (date between 1 and 31): </label>
+        <input type="text" id="date" name="date" required min="1" max="31">
+        <br><br>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+      <h4>Wondering what your Akan name is?</h4>
+    <p id="displayAkanNameHere"></p>
   </div>
-
   <script src="/JS/scripts.js"></script>
 </body>
 
