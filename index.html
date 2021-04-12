@@ -50,15 +50,15 @@
       <br><br>
 
       <label for "year">What year were you born? (write in 4 digits): </label>
-      <input type="text" id="year" name="year">
+      <input type="text" id="year" name="year" required>
       <br><br>
 
-      <label for "month">What month were you born? (use a number eg 1 for January): </label>
-      <input type="text" id="month" name="month" min="1" max="12">
+      <label for "month">What month were you born? (use a number between 1 and 12): </label>
+      <input type="text" id="month" name="month" required min="1" max="12">
       <br><br>
 
-      <label for "date">Enter your date of birth: </label>
-      <input type="text" id="date" name="date" min="1" max="31">
+      <label for "date">Enter your date of birth (date between 1 and 31): </label>
+      <input type="text" id="date" name="date" required min="1" max="31">
       <br><br>
 
       <button type="submit">Submit</button>
