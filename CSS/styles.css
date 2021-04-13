@@ -1,3 +1,7 @@
+.container {
+  background-color: burlywood;
+}
+
 .intro {
   margin: 20px;
   border: solid purple;
@@ -7,3 +11,28 @@
   font-weight: 700;
   color: yellow;
 }
+
+.display {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.footer {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color: purple;
+    margin-bottom:0;
+  }
