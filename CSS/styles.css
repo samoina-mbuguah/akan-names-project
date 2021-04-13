@@ -12,6 +12,15 @@
   color: yellow;
 }
 
+#displayAkanNameHere {
+  font-size:larger;
+  font-weight: 600;
+  font-style: italic;
+  font-family:fantasy;
+  color: purple;
+
+}
+
 .footer {
     margin-top:15px;
     text-align:center;
